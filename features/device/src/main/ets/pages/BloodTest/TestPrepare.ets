@@ -6,7 +6,7 @@ import { router } from '@kit.ArkUI'
 
 @Entry
 @Component
-struct TestPreparePage {
+struct TestPrepare {
   // 血糖测试时段
   @State bloodTime: BloodTimeItem[] = BloodTimeList
 

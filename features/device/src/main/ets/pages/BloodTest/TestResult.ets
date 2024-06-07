@@ -5,9 +5,10 @@ import { ResManager } from '@hm/basic/Index'
  */
 @Entry
 @Component
-struct TestResultPage {
+struct TestResult {
   @StorageProp('topHeight')
   topHeight: number = 0
+
   // 导航右侧内容
   @Builder
   menusBuilder() {
@@ -23,6 +24,7 @@ struct TestResultPage {
     })
 
   }
+
   // 血糖三中状态颜色：正常-#03C4B3 ｜ 过低-#F55A58 ｜ 过高-#FFAB2D
 
   build() {

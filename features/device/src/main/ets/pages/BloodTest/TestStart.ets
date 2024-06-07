@@ -6,7 +6,7 @@ import { ResManager } from '@hm/basic/Index'
 
 @Entry
 @Component
-struct TestStartPage {
+struct TestStart {
   @StorageProp('topHeight')
   topHeight: number = 0
   // 测血糖状态：0-请插入试纸，启动设备 ｜ 1-轻刺指尖，取一滴血滴在试纸上

@@ -4,7 +4,7 @@ import { Device, DeviceCate } from '../../viewmodel/DeviceModel'
 // 设备选择
 @Entry
 @Component
-struct SelDevice {
+struct SelectDevice {
   scroller: Scroller = new Scroller()
   private devices: DeviceCate[] = [
     {

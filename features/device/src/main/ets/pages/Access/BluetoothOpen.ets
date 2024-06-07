@@ -1,4 +1,4 @@
-import { ResManager } from '@hm/basic'
+import { ResManager } from '@hm/basic/'
 import { AVPlayerClass } from '@itheima/wing-care'
 
 @Entry
