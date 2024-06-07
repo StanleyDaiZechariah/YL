@@ -16,45 +16,47 @@ export class RouterConfig {
   static readonly STAGE_NURSE_RECORDS_URL: string = `@bundle:${RouterConfig.BUNDLE}/stage/ets/pages/Nurse/NurseRecord`
   static readonly STAGE_EXECUTE_URL: string = `@bundle:${RouterConfig.BUNDLE}/stage/ets/pages/Execute/Execute`
   // 设备安装
-  static readonly DEVICE_SETUP_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/SetupDevicePage`
-  static readonly DEVICE_SETUP_TIP_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/SetupTipPage`
-  static readonly DEVICE_ELDER_SEL_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/ElderSelPage`
-  static readonly DEVICE_PRODUCT_SEL_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/ProductDevicePage`
+  static readonly DEVICE_SETUP_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/device/SetupDevice`
+  static readonly DEVICE_SETUP_TIP_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/device/SetupDeviceTip`
+  static readonly DEVICE_ELDER_SEL_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/device/SelectElder`
+  static readonly DEVICE_PRODUCT_SEL_URL: string =
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/device/ProductDevice`
   // 设备绑定
-  static readonly DEVICE_BIND_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/BindDevicePage`
-  static readonly DEVICE_BIND_TIP_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/BindTipPage`
-  static readonly DEVICE_NEAR_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/NearDevicePage`
-  static readonly DEVICE_BIND_BLOOD_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/BindBloodPage`
+  static readonly DEVICE_BIND_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/device/BindDevice`
+  static readonly DEVICE_BIND_TIP_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/device/BindDeviceTip`
+  static readonly DEVICE_NEAR_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/device/NearDevice`
+  static readonly DEVICE_BIND_BLOOD_URL: string =
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/BloodManage/BindBlood`
   // 我的设备
-  static readonly DEVICE_MY_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/MyDevicePage`
+  static readonly DEVICE_MY_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/device/MyDevice`
   // 血糖
   static readonly DEVICE_BLOOD_TEST_PREPARE_URL: string =
-    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/blood_control/TestPreparePage`
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/BloodManage/TestPrepare`
   static readonly DEVICE_BLOOD_TEST_START_URL: string =
-    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/blood_control/TestStartPage`
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/BloodManage/TestStart`
   static readonly DEVICE_BLOOD_TEST_RESULT_URL: string =
-    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/blood_control/TestResultPage`
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/BloodManage/TestResult`
   // 门禁
   static readonly DEVICE_DOOR_NET_URL: string =
-    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/NetDoorPage`
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/Door/NetDoor`
   static readonly DEVICE_DOOR_NET_CONNECT_URL: string =
-    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/ConnectNetPage`
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/Wifi/ConnectNet`
   static readonly DEVICE_DOOR_SCAN_WIFI_URL: string =
-    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/ScanWifiPage`
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/Wifi/ScanWifi`
   static readonly DEVICE_DOOR_CONNECT_TIP_URL: string =
-    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/ConnectTipPage`
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/Wifi/ConnectTip`
   // 控制
   static readonly DEVICE_DOOR_CONTROL_URL: string =
-    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/access_control/DoorControlPage`
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/Access/DoorControl`
   static readonly DEVICE_DOOR_BLUE_OPEN_URL: string =
-    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/access_control/BluetoothOpenPage`
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/Access/BluetoothOpen`
   static readonly DEVICE_DOOR_REMOTE_OPEN_URL: string =
-    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/access_control/RemoteOpenPage`
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/Access/RemoteOpen`
   static readonly DEVICE_DOOR_PASSWORD_URL: string =
-    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/access_control/TempPasswordPage`
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/Access/TempPassword`
   static readonly DEVICE_DOOR_OPEN_RECORD_URL: string =
-    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/access_control/OpeningRecordPage`
+    `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/Access/OpenRecord`
   // 报警设备
-  static readonly DEVICE_ALARM_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/AlarmDevicePage`
-  static readonly DEVICE_ALARM_HANDLER_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/AlarmHandlePage`
+  static readonly DEVICE_ALARM_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/Alarm/AlarmDevice`
+  static readonly DEVICE_ALARM_HANDLER_URL: string = `@bundle:${RouterConfig.BUNDLE}/device/ets/pages/Alarm/AlarmHandle`
 }
