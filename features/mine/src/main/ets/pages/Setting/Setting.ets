@@ -1,10 +1,10 @@
 import router from '@ohos.router'
-import { EcDialogUpload, ResManager } from '@hm/basic'
+import { EcDialogUpload, ResManager } from '@hm/basic/'
 
 
 @Entry
 @Component
-struct MinePage {
+struct Setting {
   @StorageProp('topHeight')
   topHeight: number = 0
   // 上传弹层控制

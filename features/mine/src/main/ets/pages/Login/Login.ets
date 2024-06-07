@@ -2,7 +2,7 @@ import { ResManager } from '@hm/basic/Index';
 
 @Entry
 @Component
-struct LoginPage {
+struct Login {
   build() {
     Stack({ alignContent: Alignment.Center }) {
       Column() {

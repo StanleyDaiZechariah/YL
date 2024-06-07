@@ -3,7 +3,7 @@ import { router } from '@kit.ArkUI'
 
 @Entry
 @Component
-struct SplashPage {
+struct Splash {
   @StorageProp('bottomHeight')
   bottomHeight: number = 0
   @State

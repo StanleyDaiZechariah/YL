@@ -2,7 +2,7 @@ import { ResManager } from '@hm/basic/Index';
 
 @Entry
 @Component
-struct NickNamePage {
+struct NickName {
   @StorageProp('topHeight')
   topHeight: number = 0
 

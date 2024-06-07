@@ -1,10 +1,10 @@
 export class RouterConfig {
   // 基础
   static BUNDLE: string = 'com.heima.elderly.pro'
-  static readonly SPLASH_URL: string = `@bundle:${RouterConfig.BUNDLE}/home/ets/pages/SplashPage`
-  static readonly LOGIN_URL: string = `@bundle:${RouterConfig.BUNDLE}/mine/ets/pages/LoginPage`
-  static readonly USER_SET_URL: string = `@bundle:${RouterConfig.BUNDLE}/mine/ets/pages/SettingPage`
-  static readonly USER_NAME_URL: string = `@bundle:${RouterConfig.BUNDLE}/mine/ets/pages/NickNamePage`
+  static readonly SPLASH_URL: string = `@bundle:${RouterConfig.BUNDLE}/home/ets/pages/Splash/Splash`
+  static readonly LOGIN_URL: string = `@bundle:${RouterConfig.BUNDLE}/mine/ets/pages/Login/Login`
+  static readonly USER_SET_URL: string = `@bundle:${RouterConfig.BUNDLE}/mine/ets/pages/Setting/Setting`
+  static readonly USER_NAME_URL: string = `@bundle:${RouterConfig.BUNDLE}/mine/ets/pages/NickName/NickName`
   // 我的消息
   static readonly USER_MSG_URL: string = `@bundle:${RouterConfig.BUNDLE}/message/ets/pages/MsgPage`
   // 负责老人
