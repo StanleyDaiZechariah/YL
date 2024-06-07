@@ -2,7 +2,7 @@ import { ResManager } from '@hm/basic/Index';
 
 @Entry
 @Component
-struct BindBloodPage {
+struct BindBlood {
   @StorageProp('topHeight')
   topHeight: number = 0
 

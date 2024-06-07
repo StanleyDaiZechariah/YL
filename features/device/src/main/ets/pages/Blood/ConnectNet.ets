@@ -2,7 +2,7 @@ import { ResManager } from '@hm/basic/Index'
 
 @Entry
 @Component
-struct ConnectNetPage {
+struct ConnectNet {
   @StorageProp('topHeight')
   topHeight: number = 0
   // wifi 连接状态: true 连接中 ｜ false 未连接
@@ -15,7 +15,9 @@ struct ConnectNetPage {
 
   run() {
     this.timer = setInterval(() => {
-      if (this.time === 0) return clearInterval(this.timer)
+      if (this.time === 0) {
+        return clearInterval(this.timer)
+      }
       this.time--
     }, 1000)
   }

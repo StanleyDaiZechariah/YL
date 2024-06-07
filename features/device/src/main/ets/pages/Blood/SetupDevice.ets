@@ -1,5 +1,5 @@
 import { EcDialogTips } from '@itheima/wing-care'
-import { FloorSelDialog } from './components/FloorSelDialog'
+import { FloorSelDialog } from '../components/FloorSelDialog'
 import router from '@ohos.router'
 import { ResManager } from '@hm/basic/Index'
 
@@ -12,7 +12,7 @@ class FormData {
 
 @Entry
 @Component
-struct SetupDevicePage {
+struct SetupDevice {
   @StorageProp('topHeight')
   topHeight: number = 0
   // 表单
@@ -35,6 +35,7 @@ struct SetupDevicePage {
     .padding({ left: 18, bottom: 18 })
     .alignItems(HorizontalAlign.Start)
   }
+
   lookDialog: CustomDialogController = new CustomDialogController({
     builder: EcDialogTips({
       title: '输入规则',
@@ -52,7 +53,6 @@ struct SetupDevicePage {
     }),
     alignment: DialogAlignment.Center
   })
-
   // 2. 选择接入位置-楼层
   floorSelDialog: CustomDialogController = new CustomDialogController({
     builder: FloorSelDialog({
@@ -61,6 +61,7 @@ struct SetupDevicePage {
       }
     })
   })
+
   selLocation() {
     if (this.formData.locationType === 0) {
       // 选择老人

@@ -4,7 +4,7 @@ import { ResManager } from '@hm/basic/Index'
 
 @Entry
 @Component
-struct NearDevicePage {
+struct NearDevice {
   @StorageProp('topHeight')
   topHeight: number = 0
   // 1. 搜索动画

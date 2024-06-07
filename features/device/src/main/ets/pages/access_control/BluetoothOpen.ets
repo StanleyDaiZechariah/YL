@@ -3,7 +3,7 @@ import { AVPlayerClass } from '@itheima/wing-care'
 
 @Entry
 @Component
-struct BluetoothOpenPage {
+struct BluetoothOpen {
   @StorageProp('topHeight')
   topHeight: number = 0
   @State angle: number = 0

@@ -1,6 +1,6 @@
 import { EcList, EcNotFound } from '@itheima/wing-care'
 import router from '@ohos.router'
-import { ElderSelItemComp } from './components/ElderSelItemComp'
+import { ElderSelItemComp } from '../components/ElderSelItemComp'
 import { ResManager } from '@hm/basic/Index'
 
 class Params {
@@ -22,7 +22,7 @@ export class OldItem {
 
 @Entry
 @Component
-struct NurseRecordsPage {
+struct NurseRecord {
   @StorageProp('topHeight')
   topHeight: number = 0
   @State
@@ -43,7 +43,9 @@ struct NurseRecordsPage {
   isRefreshing: boolean = false
   // 触底加载数据
   load = () => {
-    if (this.loading || this.finished) return
+    if (this.loading || this.finished) {
+      return
+    }
     this.loading = true
     // 请求数据
     setTimeout(() => {
@@ -138,7 +140,12 @@ struct NurseRecordsPage {
             .width('100%')
             .height(72)
             .backgroundColor('#fff')
-            .shadow({ offsetX: 0, offsetY: -2, radius: 60, color: '#0F000000' })
+            .shadow({
+              offsetX: 0,
+              offsetY: -2,
+              radius: 60,
+              color: '#0F000000'
+            })
 
           }
           .layoutWeight(1)

@@ -1,5 +1,5 @@
 import { ResManager } from '@hm/basic/Index'
-import { OldItem } from '../ElderSelPage'
+import { OldItem } from '../Blood/ElderSel'
 
 @Component
 export struct ElderSelItemComp {
@@ -47,7 +47,12 @@ export struct ElderSelItemComp {
       .alignItems(HorizontalAlign.Start)
       .borderRadius(ResManager.EC_NORMAL_RD)
       .backgroundColor(ResManager.EC_MID_WHITE)
-      .padding({ left: 14, right: 14, top: 10, bottom: 16 })
+      .padding({
+        left: 14,
+        right: 14,
+        top: 10,
+        bottom: 16
+      })
       .onClick(() => {
         this.toggle()
       })

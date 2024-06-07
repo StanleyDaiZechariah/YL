@@ -1,99 +1,100 @@
 import { ResManager } from '@hm/basic/Index'
-import { Device, DeviceCate } from '../viewmodel/DeviceModel'
+import { Device, DeviceCate } from '../../viewmodel/DeviceModel'
+
 // 设备选择
 @Entry
 @Component
-struct SelDevicePage {
+struct SelDevice {
   scroller: Scroller = new Scroller()
   private devices: DeviceCate[] = [
     {
-      title:'报警器',
-      list:[
+      title: '报警器',
+      list: [
         {
-          name:'拉绳呼叫器',
-          icon:'/images/img_xzsb_lshjq.png'
+          name: '拉绳呼叫器',
+          icon: '/images/img_xzsb_lshjq.png'
         },
         {
-          name:'SOS按钮',
-          icon:'/images/img_xzsb_sosbtn.png'
+          name: 'SOS按钮',
+          icon: '/images/img_xzsb_sosbtn.png'
         },
         {
-          name:'烟雾报警器',
-          icon:'/images/img_xzsb_ywbjq.png'
+          name: '烟雾报警器',
+          icon: '/images/img_xzsb_ywbjq.png'
         }
       ]
     },
     {
-      title:'传感器',
-      list:[
+      title: '传感器',
+      list: [
         {
-          name:'多功能传感器',
-          icon:'/images/img_xzsb_dgncgq.png'
+          name: '多功能传感器',
+          icon: '/images/img_xzsb_dgncgq.png'
         },
         {
-          name:'门磁感应器',
-          icon:'/images/img_xzsb_mcgyq.png'
+          name: '门磁感应器',
+          icon: '/images/img_xzsb_mcgyq.png'
         },
         {
-          name:'监控设备',
-          icon:'/images/img_xzsb_sbjk.png'
+          name: '监控设备',
+          icon: '/images/img_xzsb_sbjk.png'
         }
       ]
     },
     {
-      title:'健康监测',
-      list:[
+      title: '健康监测',
+      list: [
         {
-          name:'睡眠检测带',
-          icon:'/images/img_xzsb_smjcd.png'
+          name: '睡眠检测带',
+          icon: '/images/img_xzsb_smjcd.png'
         },
         {
-          name:'血糖仪',
-          icon:'/images/img_xzsb_xty.png'
+          name: '血糖仪',
+          icon: '/images/img_xzsb_xty.png'
         },
         {
-          name:'智能手表',
-          icon:'/images/img_xzsb_znsb.png'
+          name: '智能手表',
+          icon: '/images/img_xzsb_znsb.png'
         }
       ]
     },
     {
-      title:'健康监测',
-      list:[
+      title: '健康监测',
+      list: [
         {
-          name:'睡眠检测带',
-          icon:'/images/img_xzsb_smjcd.png'
+          name: '睡眠检测带',
+          icon: '/images/img_xzsb_smjcd.png'
         },
         {
-          name:'血糖仪',
-          icon:'/images/img_xzsb_xty.png'
+          name: '血糖仪',
+          icon: '/images/img_xzsb_xty.png'
         },
         {
-          name:'智能手表',
-          icon:'/images/img_xzsb_znsb.png'
+          name: '智能手表',
+          icon: '/images/img_xzsb_znsb.png'
         }
       ]
     },
     {
-      title:'健康监测',
-      list:[
+      title: '健康监测',
+      list: [
         {
-          name:'睡眠检测带',
-          icon:'/images/img_xzsb_smjcd.png'
+          name: '睡眠检测带',
+          icon: '/images/img_xzsb_smjcd.png'
         },
         {
-          name:'血糖仪',
-          icon:'/images/img_xzsb_xty.png'
+          name: '血糖仪',
+          icon: '/images/img_xzsb_xty.png'
         },
         {
-          name:'智能手表',
-          icon:'/images/img_xzsb_znsb.png'
+          name: '智能手表',
+          icon: '/images/img_xzsb_znsb.png'
         }
       ]
     },
     {
-      title:'',
-      list:[]
+      title: '',
+      list: []
     }
   ]
 
@@ -142,13 +143,14 @@ struct SelDevicePage {
             .fontSize(ResManager.EC_SMALL_FS)
         }
         .width('100%')
-        .margin({bottom:20})
+        .margin({ bottom: 20 })
         .alignItems(HorizontalAlign.Start)
+
         // 设备列表
         Scroll(this.scroller) {
-          Column({space:20}) {
+          Column({ space: 20 }) {
             ForEach(this.devices, (item: DeviceCate) => {
-               this.deviceItem(item.title, item.list)
+              this.deviceItem(item.title, item.list)
             })
           }
           .width('100%')

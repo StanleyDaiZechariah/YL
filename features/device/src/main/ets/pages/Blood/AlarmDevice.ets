@@ -1,6 +1,6 @@
 import { ResManager } from '@hm/basic/Index'
 // 自定义tab位置
-import { AlarmListComp } from './components/AlarmListComp'
+import { AlarmListComp } from '../components/AlarmListComp'
 
 class AlarmTabItem {
   label: string = ''
@@ -8,7 +8,7 @@ class AlarmTabItem {
 
 @Entry
 @Component
-struct AlarmDevicePage {
+struct AlarmDevice {
   @StorageProp('topHeight')
   topHeight: number = 0
   @State fontColor: ResourceStr = ResManager.EC_MID_99

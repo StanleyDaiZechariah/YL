@@ -11,7 +11,7 @@ class OpenRecord {
 
 @Entry
 @Component
-struct OpeningRecordPage {
+struct OpeningRecord {
   @StorageProp('topHeight')
   topHeight: number = 0
   list: OpenRecord[] = [
@@ -107,7 +107,12 @@ struct OpeningRecordPage {
                         .fontSize(20)
                         .fontWeight(500)
                       Text('远程开门')
-                        .padding({ left: 6.5, right: 6.5, top: 2.5, bottom: 2.5 })
+                        .padding({
+                          left: 6.5,
+                          right: 6.5,
+                          top: 2.5,
+                          bottom: 2.5
+                        })
                         .borderRadius(10)
                         .backgroundColor('#DBF0FF')
                         .fontColor('#0398FF')

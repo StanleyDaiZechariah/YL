@@ -10,7 +10,7 @@ class ManageDeivceItem {
 
 @Entry
 @Component
-struct ManageDevicePage {
+struct ManageDevice {
   @StorageProp('topHeight')
   topHeight: number = 0
   scroller: Scroller = new Scroller()

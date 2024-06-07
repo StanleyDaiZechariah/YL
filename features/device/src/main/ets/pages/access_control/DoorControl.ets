@@ -8,7 +8,7 @@ class ControlItem {
 
 @Entry
 @Component
-struct DoorControlPage {
+struct DoorControl {
   @StorageProp('topHeight')
   topHeight: number = 0
   // 控制列表

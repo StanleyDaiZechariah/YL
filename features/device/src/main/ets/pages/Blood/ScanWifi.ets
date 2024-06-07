@@ -2,7 +2,7 @@ import { ResManager } from '@hm/basic/Index'
 
 @Entry
 @Component
-struct ScanWifiPage {
+struct ScanWifi {
   @StorageProp('topHeight')
   topHeight: number = 0
 
@@ -48,7 +48,12 @@ struct ScanWifiPage {
                 }
                 .width('100%')
                 .justifyContent(FlexAlign.SpaceBetween)
-                .padding({ left: 16, right: 16, top: 8, bottom: 8 })
+                .padding({
+                  left: 16,
+                  right: 16,
+                  top: 8,
+                  bottom: 8
+                })
                 .borderRadius(ResManager.EC_NORMAL_RD)
                 .backgroundColor('#fff')
               }

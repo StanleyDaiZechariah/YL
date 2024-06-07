@@ -3,7 +3,7 @@ import { ResManager } from '@hm/basic/Index';
 // 报警处理
 @Entry
 @Component
-struct AlarmHandlePage {
+struct AlarmHandle {
   @StorageProp('topHeight')
   topHeight: number = 0
   @State result: string = '';

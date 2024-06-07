@@ -22,7 +22,7 @@ export interface UnBindProductItem {
 
 @Entry
 @Component
-struct BindDevicePage {
+struct BindDevice {
   @StorageProp('topHeight')
   topHeight: number = 0
   // 1. 列表
@@ -70,6 +70,7 @@ struct BindDevicePage {
       }
     }, 1000)
   }
+
   // 2. 产品选择和折叠
   // 加载更多和收起
   toggle(item: UnBindProductItem) {

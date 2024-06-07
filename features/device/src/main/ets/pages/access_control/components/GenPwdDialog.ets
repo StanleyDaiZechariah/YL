@@ -1,7 +1,7 @@
 import { ResManager } from '@hm/basic/Index'
 
 @CustomDialog
-export struct GenPwdDailog {
+export struct GenPwdDialog {
   controller: CustomDialogController
 
   build() {

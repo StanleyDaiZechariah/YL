@@ -1,5 +1,5 @@
 {
   "src": [
-    "pages/SetupDevicePage"
+    "pages/Blood/SetupDevice"
   ]
 }

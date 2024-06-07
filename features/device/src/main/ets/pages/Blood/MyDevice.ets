@@ -1,11 +1,11 @@
-import { Device, DeviceCate } from '../viewmodel/DeviceModel'
+import { Device, DeviceCate } from '../../viewmodel/DeviceModel'
 import router from '@ohos.router'
 import { ResManager } from '@hm/basic/Index'
 
 // 设备选择
 @Entry
 @Component
-struct MyDevicePage {
+struct MyDevice {
   @StorageProp('topHeight')
   topHeight: number = 0
   scroller: Scroller = new Scroller()

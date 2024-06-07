@@ -4,7 +4,7 @@ import { ResManager } from '@hm/basic/Index';
 
 @Entry
 @Component
-struct RemoteOpenPage {
+struct RemoteOpen {
   @StorageProp('topHeight')
   topHeight: number = 0
   // 进度条

@@ -2,7 +2,7 @@ import { EcDeviceTip } from '@itheima/wing-care'
 
 @Entry
 @Component
-struct SetupTipPage {
+struct SetupTip {
   build() {
     Column() {
       EcDeviceTip()

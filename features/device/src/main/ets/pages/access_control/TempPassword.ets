@@ -3,7 +3,7 @@ import { ResManager } from '@hm/basic/Index'
 
 @Entry
 @Component
-struct TempPasswordPage {
+struct TempPassword {
   @StorageProp('topHeight')
   topHeight: number = 0
   // 1. 有效时长选择
