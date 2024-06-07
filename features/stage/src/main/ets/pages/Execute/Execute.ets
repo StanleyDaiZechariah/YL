@@ -1,9 +1,9 @@
-import { EcDialogUpload, ResManager } from '@hm/basic';
+import { EcDialogUpload, ResManager } from '@hm/basic/';
 
 // 护理任务执行
 @Entry
 @Component
-struct ExecutePage {
+struct Execute {
   @StorageProp('topHeight')
   topHeight: number = 0
   @State notes: string = '';

@@ -1,5 +1,5 @@
 // 护理详情
-import { CareTaskListComp } from './components/CareTaskListComp'
+import { CareTaskListComp } from './Components/CareTaskListComp'
 import router from '@ohos.router'
 import { ResManager } from '@hm/basic/Index'
 
@@ -10,7 +10,7 @@ class TaskItem {
 
 @Entry
 @Component
-struct CareTaskPage {
+struct CareTask {
   @StorageProp('topHeight')
   topHeight: number = 0
   // 1. 护理分类tab

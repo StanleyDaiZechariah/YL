@@ -3,7 +3,7 @@ import { ResManager } from '@hm/basic/Index';
 
 @Entry
 @Component
-struct HealthRecordPage {
+struct HealthRecord {
   @StorageProp('topHeight')
   topHeight: number = 0
 

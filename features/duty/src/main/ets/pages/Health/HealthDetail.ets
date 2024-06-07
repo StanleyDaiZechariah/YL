@@ -1,11 +1,11 @@
 import { ResManager } from '@hm/basic/Index'
 import router from '@ohos.router'
-import { HealthChartComp } from './components/HealthChartComp'
-import { HealthAlarmComp } from './components/HealthAlarmComp'
+import { HealthChartComp } from './Components/HealthChartComp'
+import { HealthAlarmComp } from './Components/HealthAlarmComp'
 
 @Entry
 @Component
-struct HealthDetailPage {
+struct HealthDetail {
   @StorageProp('topHeight')
   topHeight: number = 0
   @State

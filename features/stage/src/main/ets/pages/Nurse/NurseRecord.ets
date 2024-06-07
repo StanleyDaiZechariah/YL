@@ -1,6 +1,6 @@
 import { EcList, EcNotFound } from '@itheima/wing-care'
-import { SearchRecordComp } from '../components/SearchRecordComp'
-import { ImgRecordDialog } from '../components/ImgRecordDialog'
+import { SearchRecordComp } from '../../components/SearchRecordComp'
+import { ImgRecordDialog } from '../../components/ImgRecordDialog'
 import { ResManager } from '@hm/basic/Index'
 
 class Params {
@@ -11,7 +11,7 @@ class Params {
 // 护理任务记录
 @Entry
 @Component
-struct NurseRecordsPage {
+struct NurseRecord {
   @StorageProp('topHeight')
   topHeight: number = 0
   // 1. 列表
@@ -30,7 +30,9 @@ struct NurseRecordsPage {
   isRefreshing: boolean = false
   // 触底加载数据
   load = () => {
-    if (this.loading || this.finished) return
+    if (this.loading || this.finished) {
+      return
+    }
     this.loading = true
     // 请求数据
     setTimeout(() => {
@@ -130,13 +132,23 @@ struct NurseRecordsPage {
                     .width('100%')
                     .backgroundColor('#E8F2F1')
                     .borderRadius(5)
-                    .padding({ left: 10, right: 10, top: 5, bottom: 8 })
+                    .padding({
+                      left: 10,
+                      right: 10,
+                      top: 5,
+                      bottom: 8
+                    })
 
                   }
                   .width('100%')
                   .borderRadius(ResManager.EC_NORMAL_RD)
                   .backgroundColor(ResManager.EC_MID_WHITE)
-                  .padding({ left: 14, right: 14, top: 10, bottom: 10 })
+                  .padding({
+                    left: 14,
+                    right: 14,
+                    top: 10,
+                    bottom: 10
+                  })
                 }
               })
             }

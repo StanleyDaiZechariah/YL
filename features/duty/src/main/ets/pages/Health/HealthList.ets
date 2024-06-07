@@ -5,7 +5,7 @@ import dayjs from 'dayjs'
 // 健康数据
 @Entry
 @Component
-struct HealthDataPage {
+struct HealthList {
   @StorageProp('topHeight')
   topHeight: number = 0
 
@@ -71,7 +71,12 @@ struct HealthDataPage {
                   Text('男')
                     .fontColor('#0398FF')
                     .fontSize(ResManager.EC_SMALL_FS)
-                    .padding({ left: 10, right: 10, top: 2, bottom: 2 })
+                    .padding({
+                      left: 10,
+                      right: 10,
+                      top: 2,
+                      bottom: 2
+                    })
                     .backgroundColor('#DBF0FF')
                     .borderRadius(10)
 
