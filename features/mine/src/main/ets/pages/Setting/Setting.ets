@@ -1,5 +1,5 @@
 import router from '@ohos.router'
-import { EcDialogUpload, ResManager } from '@hm/basic/'
+import { EcDialogUpload, ResManager } from '@hm/basic/Index'
 
 
 @Entry

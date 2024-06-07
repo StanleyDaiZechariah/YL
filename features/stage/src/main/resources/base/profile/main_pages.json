@@ -1,6 +1,5 @@
 {
   "src": [
-    "pages/Execute/Execute",
     "pages/Nurse/NurseRecord"
   ]
 }

@@ -71,3 +71,4 @@ export struct Stage {
     .backgroundColor('#fff')
   }
 }
+
