@@ -1,5 +1,5 @@
 import { EcDialogTips } from '@itheima/wing-care'
-import { FloorSelDialog } from '../components/FloorSelectDialog'
+import { FloorSelectDialog } from './components/FloorSelectDialog'
 import router from '@ohos.router'
 import { ResManager } from '@hm/basic/Index'
 
@@ -55,7 +55,7 @@ struct SetupDevice {
   })
   // 2. 选择接入位置-楼层
   floorSelDialog: CustomDialogController = new CustomDialogController({
-    builder: FloorSelDialog({
+    builder: FloorSelectDialog({
       onConfirm: () => {
 
       }

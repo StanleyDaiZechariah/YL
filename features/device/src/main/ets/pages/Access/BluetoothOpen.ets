@@ -1,4 +1,4 @@
-import { ResManager } from '@hm/basic/'
+import { ResManager } from "@hm/basic/Index"
 import { AVPlayerClass } from '@itheima/wing-care'
 
 @Entry
@@ -32,7 +32,7 @@ struct BluetoothOpen {
       }
       .width('100%')
       .height('100%')
-      .backgroundColor('#fff')
+      .backgroundColor(Color.White)
     }
     .title('蓝牙开门')
     .titleMode(NavigationTitleMode.Mini)

@@ -1,6 +1,6 @@
 import { ResManager } from '@hm/basic/Index'
 // 自定义tab位置
-import { AlarmListComp } from '../components/AlarmList'
+import { AlarmList } from './components/AlarmList'
 
 class AlarmTabItem {
   label: string = ''
@@ -31,7 +31,7 @@ struct AlarmDevice {
         Tabs({ index: this.activeIndex, controller: this.controller }) {
           ForEach(this.tabs, (item: AlarmTabItem, i: number) => {
             TabContent() {
-              AlarmListComp({ type: i })
+              AlarmList({ type: i })
             }
             .padding({ top: 15 })
           })

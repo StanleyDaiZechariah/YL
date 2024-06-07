@@ -4,17 +4,17 @@ class RecordItem {
   name: string = ''
 }
 
-class OpenRecord {
+class OpenRecordData {
   month: string = ''
   list: RecordItem[] = []
 }
 
 @Entry
 @Component
-struct OpeningRecord {
+struct OpenRecord {
   @StorageProp('topHeight')
   topHeight: number = 0
-  list: OpenRecord[] = [
+  list: OpenRecordData[] = [
     {
       month: '12',
       list: [
@@ -96,7 +96,7 @@ struct OpeningRecord {
 
         // 2. 月份列表
         List({ space: 10 }) {
-          ForEach(this.list, (item: OpenRecord) => {
+          ForEach(this.list, (item: OpenRecordData) => {
             ListItemGroup({ space: 10, header: this.groupHead(item.month) }) {
               ForEach(item.list, (it: RecordItem, i: number) => {
                 ListItem() {
@@ -157,7 +157,5 @@ struct OpeningRecord {
     .titleMode(NavigationTitleMode.Mini)
     .backgroundColor(ResManager.EC_MID_BG)
     .padding({ top: this.topHeight })
-
-    // .backgroundColor('red')
   }
 }

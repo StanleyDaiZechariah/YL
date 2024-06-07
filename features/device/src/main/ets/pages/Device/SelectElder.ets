@@ -1,6 +1,6 @@
 import { EcList, EcNotFound } from '@itheima/wing-care'
 import router from '@ohos.router'
-import { ElderSelItemComp } from '../components/ElderSelectItem'
+import { ElderSelectItem } from './components/ElderSelectItem'
 import { ResManager } from '@hm/basic/Index'
 
 class Params {
@@ -119,7 +119,7 @@ struct NurseRecord {
               }) {
                 ForEach(this.list, (item: OldItem, i: number) => {
                   ListItem() {
-                    ElderSelItemComp({ item: item, i: i })
+                    ElderSelectItem({ item: item, i: i })
                   }
                 })
               }

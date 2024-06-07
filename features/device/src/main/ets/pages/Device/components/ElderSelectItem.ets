@@ -1,5 +1,5 @@
 import { ResManager } from '@hm/basic/Index'
-import { OldItem } from '../BloodManage/SelectElder'
+import { OldItem } from '../SelectElder'
 
 @Component
 export struct ElderSelectItem {

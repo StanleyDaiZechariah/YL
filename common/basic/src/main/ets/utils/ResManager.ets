@@ -25,6 +25,7 @@ export class ResManager {
   // 图片
   static IC_LOGO = $r('app.media.icon')
   static IC_ARROW_UP = $r('app.media.ic_arrow_up')
+  // static IC_ARROW_BLACK = $r('app.media.ic_arrow_black')
   static IC_BACK_BLACK = $r('app.media.ic_back_black')
   static IC_BACK_WHITE = $r('app.media.ic_back_white')
   static IC_DOWN = $r("app.media.ic_time_down")

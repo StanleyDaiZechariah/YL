@@ -3,6 +3,7 @@ import cameraPicker from '@ohos.multimedia.cameraPicker';
 import camera from '@ohos.multimedia.camera';
 import common from '@ohos.app.ability.common';
 import { BusinessError } from '@ohos.base';
+import { ResManager } from '../utils/ResManager';
 
 @CustomDialog
 export struct EcDialogUpload {
@@ -15,8 +16,8 @@ export struct EcDialogUpload {
       List() {
         ListItem() {
           Text('拍照')
-            .fontColor($r('app.color.ec_main_color'))
-            .fontSize($r('app.float.ec_module_title_font_size'))
+            .fontColor(ResManager.EC_MAIN_COLOR)
+            .fontSize(ResManager.EC_MODULE_TITLE_FS)
             .fontWeight(500)
             .width('100%')
             .textAlign(TextAlign.Center)
@@ -25,8 +26,8 @@ export struct EcDialogUpload {
 
         ListItem() {
           Text('从相册选择')
-            .fontColor($r('app.color.ec_main_color'))
-            .fontSize($r('app.float.ec_module_title_font_size'))
+            .fontColor(ResManager.EC_MAIN_COLOR)
+            .fontSize(ResManager.EC_MODULE_TITLE_FS)
             .fontWeight(500)
             .width('100%')
             .textAlign(TextAlign.Center)
@@ -35,8 +36,8 @@ export struct EcDialogUpload {
 
         ListItem() {
           Text('取消')
-            .fontColor($r('app.color.ec_mid_59'))
-            .fontSize($r('app.float.ec_module_title_font_size'))
+            .fontColor(ResManager.EC_MID_59)
+            .fontSize(ResManager.EC_MODULE_TITLE_FS)
             .fontWeight(500)
             .width('100%')
             .textAlign(TextAlign.Center)
@@ -45,10 +46,10 @@ export struct EcDialogUpload {
       }
       .width('100%')
       .height('auto')
-      .divider({ strokeWidth: 0.5, color: $r('app.color.ec_mid_line') })
-      .padding($r('app.float.ec_content_space'))
+      .divider({ strokeWidth: 0.5, color: ResManager.EC_MID_LINE })
+      .padding(ResManager.EC_CONTENT_SPACE)
       .backgroundColor('#fff')
-      .borderRadius($r('app.float.ec_normal_radius'))
+      .borderRadius(ResManager.EC_NORMAL_RD)
 
     }
   }
