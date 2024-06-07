@@ -9,7 +9,7 @@ class Params {
 }
 
 @Component
-export struct AlarmListComp {
+export struct AlarmList {
   // 消息类型: 0 待处理 ｜ 1 已处理
   type: number = 0
   // 1. 列表
@@ -28,7 +28,9 @@ export struct AlarmListComp {
   isRefreshing: boolean = false
   // 触底加载数据
   load = () => {
-    if (this.loading || this.finished) return
+    if (this.loading || this.finished) {
+      return
+    }
     this.loading = true
     // 请求数据
     setTimeout(() => {
@@ -134,7 +136,12 @@ export struct AlarmListComp {
                   .alignSelf(ItemAlign.End)
               }
               .margin({ top: 10 })
-              .padding({ left: 9, right: 9, top: 5, bottom: 5 })
+              .padding({
+                left: 9,
+                right: 9,
+                top: 5,
+                bottom: 5
+              })
               .borderRadius(5)
               .backgroundColor('#E8F2F1')
             }

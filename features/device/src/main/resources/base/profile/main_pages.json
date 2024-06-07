@@ -1,5 +1,5 @@
 {
   "src": [
-    "pages/BloodManage/SetupDevice"
+    "pages/Device/SetupDevice"
   ]
 }

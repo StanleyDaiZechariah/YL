@@ -1,6 +1,6 @@
 import { ResManager } from '@hm/basic/Index'
 // 自定义tab位置
-import { AlarmListComp } from '../components/AlarmListComp'
+import { AlarmListComp } from '../components/AlarmList'
 
 class AlarmTabItem {
   label: string = ''

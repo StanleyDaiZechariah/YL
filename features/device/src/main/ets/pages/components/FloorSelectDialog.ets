@@ -6,17 +6,18 @@ export interface FloorItem {
   children: FloorItem[]
 }
 
-export interface  FloorTree {
+export interface FloorTree {
   floors: FloorItem[]
   rooms: FloorItem[]
   beds: FloorItem[]
 }
+
 export type OnConfirm = (currentStep: number, selectedFloor?: FloorItem | null, selectedRoom?: FloorItem | null,
   selectedBed?: FloorItem | null) => void
 
 @Component
 @CustomDialog
-export struct FloorSelDialog {
+export struct FloorSelectDialog {
   // 控制器
   controller: CustomDialogController
   // 0-选择楼层 ｜ 1-选择房间 ｜ 2-选择床位
@@ -95,6 +96,7 @@ export struct FloorSelDialog {
       return 100
     }
   }
+
   build() {
     Column() {
       //  dialog标题
@@ -242,7 +244,12 @@ export struct FloorSelDialog {
 
       // 分割线
       Divider()
-        .padding({ left: 15, top: 10, right: 15, bottom: 16 })
+        .padding({
+          left: 15,
+          top: 10,
+          right: 15,
+          bottom: 16
+        })
 
       // 2. 联动内容
       Row() {

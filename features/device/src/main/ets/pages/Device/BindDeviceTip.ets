@@ -4,7 +4,7 @@ import { router } from '@kit.ArkUI';
 
 @Entry
 @Component
-struct BindTip {
+struct BindDeviceTip {
   // 1 成功 | 2 失败
   @State
   tips: 1 | 2 = 1

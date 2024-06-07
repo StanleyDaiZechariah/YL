@@ -2,7 +2,7 @@ import { ResManager } from '@hm/basic/Index'
 import { OldItem } from '../BloodManage/SelectElder'
 
 @Component
-export struct ElderSelItemComp {
+export struct ElderSelectItem {
   @ObjectLink
   item: OldItem
   @Prop

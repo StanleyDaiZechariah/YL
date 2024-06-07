@@ -1,5 +1,5 @@
 import { EcDialogTips } from '@itheima/wing-care'
-import { FloorSelDialog } from '../components/FloorSelDialog'
+import { FloorSelDialog } from '../components/FloorSelectDialog'
 import router from '@ohos.router'
 import { ResManager } from '@hm/basic/Index'
 

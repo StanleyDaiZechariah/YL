@@ -1,6 +1,6 @@
 import { EcList, EcNotFound } from '@itheima/wing-care'
 import router from '@ohos.router'
-import { ElderSelItemComp } from '../components/ElderSelItemComp'
+import { ElderSelItemComp } from '../components/ElderSelectItem'
 import { ResManager } from '@hm/basic/Index'
 
 class Params {

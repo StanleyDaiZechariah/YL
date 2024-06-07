@@ -2,7 +2,7 @@ import { ResManager } from '@hm/basic/Index'
 import router from '@ohos.router'
 
 // 设备管理
-class ManageDeivceItem {
+class ManageDeviceItem {
   name: string = ''
   icon: ResourceStr = ''
   url: string = ''
@@ -14,12 +14,11 @@ struct ManageDevice {
   @StorageProp('topHeight')
   topHeight: number = 0
   scroller: Scroller = new Scroller()
-  list: ManageDeivceItem[] = [
+  list: ManageDeviceItem[] = [
     { name: '设备安装', icon: $r('app.media.pic_sbgl_sbaz'), url: 'pages/device/SetupDevicePage' },
     { name: '设备绑定', icon: $r('app.media.pic_sbgl_sbbd'), url: 'pages/device/BindDevicePage' },
     { name: '我的设备', icon: $r('app.media.pic_sbgl_wdesb'), url: 'pages/device/MyDevicePage' },
-    { name: '报警设备', icon: $r('app.media.pic_sbgl_bjsb'), url: 'pages/device/AlarmDevicePage' },
-
+    { name: '报警设备', icon: $r('app.media.pic_sbgl_bjsb'), url: 'pages/device/AlarmDevicePage' }
   ]
 
   @Builder
@@ -52,7 +51,7 @@ struct ManageDevice {
 
           // 健康数据项
           GridRow({ columns: 2, gutter: 10 }) {
-            ForEach(this.list, (item: ManageDeivceItem) => {
+            ForEach(this.list, (item: ManageDeviceItem) => {
               GridCol() {
                 Column() {
                   Image(item.icon)
