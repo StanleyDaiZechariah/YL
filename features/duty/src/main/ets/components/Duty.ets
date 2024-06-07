@@ -26,7 +26,9 @@ export struct Duty {
   isRefreshing: boolean = false
   // 触底加载数据
   load = () => {
-    if (this.loading || this.finished) return
+    if (this.loading || this.finished) {
+      return
+    }
     this.loading = true
     // 请求数据
     setTimeout(() => {
@@ -67,11 +69,15 @@ export struct Duty {
           .fontColor('#000')
           .fontWeight(500)
       }
-      .padding({ left: 24, right: 24, bottom: 10, top: 10 })
+      .padding({
+        left: 24,
+        right: 24,
+        bottom: 10,
+        top: 10
+      })
       .width('100%')
       .justifyContent(FlexAlign.Start)
 
-      // .border({width:2, color:'red'})
 
       // 列表
       Column() {
@@ -153,7 +159,12 @@ export struct Duty {
               .alignItems(VerticalAlign.Top)
               .borderRadius(ResManager.EC_NORMAL_RD)
               .backgroundColor(ResManager.EC_MID_WHITE)
-              .padding({ left: 14, right: 14, top: 16, bottom: 16 })
+              .padding({
+                left: 14,
+                right: 14,
+                top: 16,
+                bottom: 16
+              })
             }
           })
         }
