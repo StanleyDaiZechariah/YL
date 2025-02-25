@@ -61,10 +61,15 @@ struct Index {
       ForEach(this.tabBars, (item: TabBarItem, index: number) => {
         TabContent() {
           // tab 内容=》切换子组件
-          if (index === 0) Home()
-          else if (index === 1) Duty()
-          else if (index === 2) Stage()
-          else Mine()
+          if (index === 0) {
+            Home()
+          } else if (index === 1) {
+            Duty()
+          } else if (index === 2) {
+            Stage()
+          } else {
+            Mine()
+          }
         }
         .tabBar(this.TabBarBuilder(item, index))
       })
